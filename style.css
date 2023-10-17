@@ -22,14 +22,26 @@ background-color: #14FF00;
 width: 40px;
 height:40px;
 clip-path: circle(50% at 50% 50%);
+animation: blink 1s linear infinite;
 }
 .circle2{
 background-color: #EEF9FC;
 width: 40px;
 height:40px;
 clip-path: circle(50% at 50% 50%);
+animation: blink 1.5s linear infinite;
 }
-
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 main{
 display: flex;
 justify-content: center;
@@ -48,6 +60,12 @@ font-size:24px;
 padding: 10px 40px 10px 40px;
 margin-top: 30px;
 cursor:pointer;
+transition: .3s;
+}
+main p:nth-child(2):hover{
+
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
 }
 
 footer{
@@ -58,4 +76,18 @@ align-items: center;
 color:#fff;
 padding: 20px 40px 20px 40px;
 margin-bottom: -20px;
+}
+footer .section3{
+    text-align: right;
+}
+footer .section2{
+    animation: rotateAndBreathe 4s infinite;
+}
+@keyframes rotateAndBreathe {
+    0%, 100% {
+        transform: rotate(0deg) scale(1);
+    }
+    20%,60%, 80% {
+        transform: rotate(360deg) scale(.8);
+    }
 }
