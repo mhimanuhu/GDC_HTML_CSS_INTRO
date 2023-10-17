@@ -1,0 +1,61 @@
+*{margin:0; padding: 0;box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Space+Grotesk:wght@600&display=swap');
+body{
+background: url('assets/back_image.png');
+background-size: cover;
+background-repeat: no-repeat;
+padding: 20px;
+height: 100vh;
+font-family: 'Inter', sans-serif;
+}
+nav{
+background-color: #3C04B5;
+display: flex;
+padding: 20px 10px 20px 10px;
+font-size: 24px;
+justify-content: space-between;
+align-items: center;
+color:white
+}
+.circle1{
+background-color: #14FF00;
+width: 40px;
+height:40px;
+clip-path: circle(50% at 50% 50%);
+}
+.circle2{
+background-color: #EEF9FC;
+width: 40px;
+height:40px;
+clip-path: circle(50% at 50% 50%);
+}
+
+main{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 500px;
+flex-direction: column;
+}
+main p:nth-child(1){
+font-size: 72px;
+}
+main p:nth-child(2){
+background: #3C04B5;
+box-shadow: 3px 2px 20px 0px rgba(36, 31, 66, 0.74);
+color:#fff;
+font-size:24px;
+padding: 10px 40px 10px 40px;
+margin-top: 30px;
+cursor:pointer;
+}
+
+footer{
+background-color: #25212C;
+display: flex;
+justify-content: space-between;
+align-items: center;
+color:#fff;
+padding: 20px 40px 20px 40px;
+margin-bottom: -20px;
+}
